@@ -165,10 +165,10 @@ function App() {
                     </Box>
 
                     {/* Left column (now appears below on mobile) */}
-                    <Box sx={{ width: { xs: '100%', md: '30%' } }}>
-                        <Card sx={{ mb: 3 }}>
-                            <CardContent>
-                                {isDevelopment && (
+                    {isDevelopment && (
+                        <Box sx={{ width: { xs: '100%', md: '30%' } }}>
+                            <Card sx={{ mb: 3 }}>
+                                <CardContent>
                                     <Typography
                                         variant="caption"
                                         color="text.secondary"
@@ -176,10 +176,10 @@ function App() {
                                     >
                                         Using mock data (Development Mode)
                                     </Typography>
-                                )}
-                            </CardContent>
-                        </Card>
-                    </Box>
+                                </CardContent>
+                            </Card>
+                        </Box>
+                    )}
                 </Box>
             </Container>
         </Box>
